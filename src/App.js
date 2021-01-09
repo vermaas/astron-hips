@@ -1,25 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    useParams
+} from "react-router-dom";
 
-export default App;
+import NavigationBar from './components/NavigationBar';
+import HipsPage from './components/HipsPage';
+
+export default function App () {
+    return (
+        <Router basename="astroview">
+        <div>
+            <NavigationBar/>
+
+            <Switch>
+                <Route exact path="/">
+                    <HipsPage/>
+                </Route>
+            </Switch>
+        </div>
+            <footer><small> (C) 2020 - ASTRON - version 1.0.0 - 9 jan 2021 20:00</small></footer>
+        </Router>
+
+    );
+}

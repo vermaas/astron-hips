@@ -1,4 +1,4 @@
-import React, { useContext, useState }  from 'react';
+import React from 'react';
 import {Card, Button, Table, Image } from 'react-bootstrap'
 import Iframe from '@trendmicro/react-iframe';
 
@@ -8,7 +8,9 @@ export default function HipsCard(props) {
         <Card>
             <Card.Body>
                 <Table>
+                    <div>
                     <Iframe src={props.data.hips_service_url} width="100%" height={540} />
+                    </div>
                 </Table>
             </Card.Body>
 

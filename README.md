@@ -1,6 +1,6 @@
 # astron-hips
 
-Wrapper website that parses and shows the HIPS surveys from the hipslist.txt file.
+Website that parses and shows the HIPS surveys as defined in the hipslist.txt file.
 
 ```
 # ASTRON HIPS server

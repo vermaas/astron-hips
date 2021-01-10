@@ -14,3 +14,6 @@
    hips_status          = public master clonableOnce
 
 ![](docs/astron-hips-screenshot.png)
+![](/docs/astron-hips-screenshot.png)
+![](astron-hips/docs/astron-hips-screenshot.png)
+https://git.astron.nl/astron-sdc/astron-hips/-/blob/master/docs/astron-hips-screenshot.png

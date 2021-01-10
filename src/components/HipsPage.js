@@ -107,7 +107,7 @@ export default function HipsPage(props) {
                     record['creator_did'] = split_line[1]
 
                     let title = split_line[1].split("/").pop();
-                    record['title'] = title
+                    record['title'] = title.toUpperCase()
                 }
 
                 if (split_line[0].includes('hips_release_date')) {
@@ -139,12 +139,12 @@ export default function HipsPage(props) {
 
     let tabs_array = []
     for (var i = 0; i < hipsList.length; i++) {
-        let my_tab = <Tab eventKey={hipsList[i]['title']} title={hipsList[i]['title']}>
+        let my_tab = <Tab className="Tab" eventKey={hipsList[i]['title']} title={hipsList[i]['title']}>
             <HipsCard data={hipsList[i]}/>
         </Tab>
         tabs_array.push(my_tab)
     }
-    let renderTabs=<Tabs defaultActiveKey={hipsList[0]['title']} id="hips_tab">
+    let renderTabs=<Tabs className="Tab" defaultActiveKey={hipsList[0]['title']} id="hips_tab">
         {tabs_array}
     </Tabs>
 

@@ -22,7 +22,7 @@ export default function App () {
                 </Route>
             </Switch>
         </div>
-            <footer><small> (C) 2021 - ASTRON - version 1.0.0 - 10 jan 2021 15:30</small></footer>
+            <footer><small> (C) 2021 - ASTRON - version 1.0.0 - 10 jan 2021</small></footer>
         </Router>
 
     );

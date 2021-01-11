@@ -16,6 +16,5 @@ Website that parses and shows the HIPS surveys as defined in the hipslist.txt fi
    hips_status          = public master clonableOnce
 
 
-![](docs/astron-hips-screenshot.png)
 ![](https://git.astron.nl/astron-sdc/astron-hips/-/blob/master/docs/astron-hips-screenshot.png)
 
